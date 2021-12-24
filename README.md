@@ -60,10 +60,10 @@
   not "data.csv"
   
   ## • Merge two csv file in one
-    python3 main.py m
+    python3 main.py m first.csv second.csv
   
-  And then input your first csv file name without (.csv) extension 
-  input your second csv file name without (.csv) extension
+  And then input your first csv file name with (.csv) extension 
+  input your second csv file name with (.csv) extension
   
   Finally, you will get output.csv file as a result  
 
