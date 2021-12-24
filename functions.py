@@ -95,7 +95,7 @@ def merge_csv() -> None:
     file2 = pd.read_csv(sys.argv[3])
     print(f"{icon} merging {sys.argv[2]} & {sys.argv[3]} ....")
     print(f"{icon} big files can take some time ...")
-    merge = file1.merge(file2, on='username')
+    merge = file1.merge(file2, on='Username')
     merge.to_csv("output.csv", index=False)
     print(f"{icon} saved file as 'output.csv' \n\n")
 
