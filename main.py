@@ -27,16 +27,7 @@ selected = f"{icon} Selected Module : {red}{sys.argv[1]}"
 # Main Function
 try:
     if any([sys.argv[1] == 'merge', sys.argv[1] == 'm']):
-        file_one = input(f"{icon} Enter your first CSV file without extension (.csv) : ")
-        file_two = input(f"{icon} Enter your Second CSV file without extension (.csv) : ")
-        permission = input(f"{second_icon} Do you want to merge {file_one}.csv and {file_two}.csv file in one file ? (y/n) ? : ")
-        if permission == 'yes' or 'y':
-            os.system(f"""
-                python3 main.py m {file_one}.csv {file_two}.csv
-                python main.py m {file_one}.csv {file_two}.csv
-            """)
-        else:
-            print(f"{second_icon} Please Enter ( y or n ) : {red}")
+        print(f"{icon} Selected Module : {red}{sys.argv[1]} {sys.argv[2]} {sys.argv[3]}")
         functions.merge_csv()
     elif any([sys.argv[1] == 'update', sys.argv[1] == 'u']):
         print(selected)
